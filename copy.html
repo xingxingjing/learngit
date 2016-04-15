@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mask</title>
+<script src="images/jquery-1.7.1.js"></script>
+<script>
+var arrayObj = new Array();
+console.log(JSON.stringify(arrayObj));
+var list=[1,2,3,4,5];
+  list.splice(0,2);
+console.log(list);
+for(var i=0;i<list.length;i++){
+  console.log(list[i]+"list[i]");
+}
+  // var attrs = "0160115135352_706.swf", type: "application/x-shockwave-flash", width: "900", height: "500", quality: "high"}";
+    var attrs = '';
+   console.log(_mediaEmbed(attrs));
+  function _mediaEmbed(attrs) {
+	var html = '<embed ';
+	var src = '';
+	var width='';
+	var height='';
+	var type='application/x-shockwave-flash';
+	
+	if(type=='application/x-shockwave-flash'){
+		html += 'width="919" height="263"' 
+				+'src="'+src+'" '
+				+'type="application/x-shockwave-flash" '
+				+'style="width:'+width+'px;height:'+height+'px;" '
+				+'isdependent="0" '
+				+'allowfullscreeninteractive="true" ' 
+				+'allowfullscreen="true" '
+				+'allownetworking="all" '
+				+'profileport="0" profile="0" seamlesstabbing="1" embedmovie="0" devicefont="0" '
+				+'scale="NoScale" allowscriptaccess="always" menu="-1" salign="LT" '
+				+'quality="High" loop="-1" play="0" '
+				+'flashvars="SwfFile=/fsm_cms3/null/199.swf&amp;Scale=0.6&amp;key=cbd65a4d4530487cc02$6103f82513859c4feeb&amp;ZoomTransition=easeOut&amp;ZoomTime=0.5&amp;ZoomInterval=0.2&amp;FitWidthOnLoad=true&amp;MinZoomSize=0.2&amp;MaxZoomSize=5&amp;InitViewMode=Portrait&amp;ViewModeToolsVisible=true&amp;ZoomToolsVisible=true&amp;NavToolsVisible=true&amp;CursorToolsVisible=true&amp;SearchToolsVisible=true&amp;localeChain=zh_CN&amp;isPrintable=true&amp;isTextSelectable=true" ' 
+				+'wmode="Opaque"';
+	}else{
+		html += key + '="' + val + '" ';
+	}
+	html += '/>';
+	return html;
+}
+</script>
+<style type="text/css">
+  .loading-mask{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:20000;
+        background-color:gray;
+    }
+    #loading{
+        position:absolute;
+        left:45%;
+        top:40%;
+        padding:2px;
+        z-index:20001;
+        height:auto;
+ }
+    #loading .loading-indicator{
+        background:white;
+        color:#444;
+        font:bold 20px tahoma,arial,helvetica;
+        padding:10px;
+        margin:0;
+        height:auto;
+		border-radius:5px;
+    }
+    #loading-msg {
+        font: normal 18px arial,tahoma,sans-serif;
+    }
+	.big_paper{ width:232px;background:#ccc;}
+.big_paper ul{width:202px; margin:0 auto; background:#3F3;}
+</style>
+<script>
+ function a(){
+	var test = 'bssTest';
+	if(test.indexOf('Tww')>-1){
+		alert("有test字符串");
+	}
+ }
+
+</script>
+</head>
+<body>
+ <a href="copy1.html">copy1</a>
+ 
+
+</p>
+
+<div class="big_paper">
+        <ul>
+
+            <h3><a href="#">公益广告</a></h3>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">幽默</a></li>
+            <li><a href="#">创意</a></li>
+            <li><a href="#">社会公德</a></li>
+        </ul>
+</div>
+
+
+
+
+
+</body>
+</html>
